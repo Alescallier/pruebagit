@@ -1,0 +1,93 @@
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit
+$ git init
+Initialized empty Git repository in C:/Users/aleja/Desktop/pruebaGit/.git/
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git config user.name "Alescallier"
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git config user.email "alejandroescallier@gmail.com"
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git remote add origin "https://github.com/Alescallier/pruebagit.git"
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hola.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git add hola.txt
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hola.txt
+
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git commit -m "estoy seguro de este commit 1"
+[master (root-commit) bd57f6f] estoy seguro de este commit 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hola.txt
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git log
+commit bd57f6f96dc1962371103b258adf9ef6630e4a25 (HEAD -> master)
+Author: Alescallier <alejandroescallier@gmail.com>
+Date:   Thu Apr 25 11:17:52 2024 -0300
+
+    estoy seguro de este commit 1
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Alescallier/pruebagit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$ ^C
+
+aleja@DESKTOP-2892OG8 MINGW64 /c/users/aleja/desktop/pruebaGit (master)
+$
